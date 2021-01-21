@@ -1,0 +1,24 @@
+{
+  "name": "isbncodeverify",
+  "version": "1.0.0",
+  "description": "Verify ISBN code.",
+  "main": "./src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/368573607/Verify_ISBN_Code.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/368573607/Verify_ISBN_Code/issues"
+  },
+  "homepage": "https://github.com/368573607/Verify_ISBN_Code#readme",
+  "devDependencies": {
+    "chalk": "^4.1.0"
+  }
+}
