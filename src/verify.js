@@ -24,17 +24,18 @@ const weighted_sum = function (text, type = "num") {
 
 const verify = function (isbn) {
     if (isbn.length === 13) {
-        var check_code = 10 - (weighted_sum(delete_hyphen(isbn)) % 10);
-    }else if(isbn.length===10){
-        var check_code = 11 - (weighted_sum(delete_hyphen(isbn)) % 11);
-    }else{
-        var check_code="Non-standard!";
+        var check_code = 10 - (weighted_sum(isbn) % 10);
+    } else if (isbn.length === 10) {
+        var check_code = 11 - (weighted_sum(isbn) % 11);
+    } else {
+        var check_code = "Non-standard!";
     }
 
-    return check_code==isbn[isbn.length-1]?true:false;
+    return check_code == isbn[isbn.length - 1] ? true : false;
 }
 
 module.exports = {
-    verify:verify,
-    weight:weighted_sum
+    verify: verify,
+    weight: weighted_sum,
+    deleteHyphen: delete_hyphen
 };
