@@ -2,7 +2,7 @@
   "name": "isbncodeverify",
   "version": "1.0.0",
   "description": "Verify ISBN code.",
-  "main": "./src/main.js",
+  "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./src/main.js"
@@ -20,5 +20,8 @@
   "homepage": "https://github.com/368573607/Verify_ISBN_Code#readme",
   "devDependencies": {
     "chalk": "^4.1.0"
+  },
+  "bin":{
+    "isbn":"./src/main.js"
   }
 }

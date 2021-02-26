@@ -1,4 +1,4 @@
-const verify = require("./verify");
+#! /usr/bin/env node
 
-//console.log(verify.weight(process.argv[2]));
-console.log(verify.verify(verify.deleteHyphen(process.argv[2])));
+const verify = require("./verify");
+console.log(verify.verify(verify.deleteHyphen(process.argv[2]))?"isbn码正确":"isbn码错误");
